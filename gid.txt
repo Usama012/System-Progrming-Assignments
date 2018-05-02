@@ -1,0 +1,20 @@
+//Usama Ahmad [BCS-F15-26]
+#include <stdio.h>
+#include<stdlib.h>
+#include <unistd.h>
+
+int main()
+{ 
+printf("GetPId()--> : %d", getpid()); 
+printf("GetUId()--> : %d", getuid());
+printf("GetGId()--> : %d", getgid());
+printf("\n\n Environmnet Elements-->\n\n");
+printf("PATH--> %s\n", getenv("PATH"));
+printf("ROOT--> %s\n", getenv("ROOT"));
+printf("MAIL-->%s \n", getenv("MAIL"));
+printf("SHELL--> %s\n", getenv("SHELL"));
+printf("TERM--> %s\n", getenv("TERM"));
+printf("USERS--> %s\n", getenv("USERS"));
+printf("LS_COLORS--> %s\n", getenv("LS_COLORS"));
+return 1;
+} 
